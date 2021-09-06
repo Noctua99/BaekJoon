@@ -2,7 +2,7 @@ package bronze;
 
 import java.util.Scanner;
 
-public class _1000 {
+public class Bronze5_1000 {
 	public static void main(String args[]) {
 		int num1;
 		int num2;
