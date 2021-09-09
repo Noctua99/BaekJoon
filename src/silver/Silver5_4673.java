@@ -19,8 +19,8 @@ public class Silver5_4673 {
 
 		}
 		for (int i = 0; i < 10000; i++) {
-			if(intArray[i]>=0) {
-				System.out.println(i+1);
+			if (intArray[i] >= 0) {
+				System.out.println(i + 1);
 			}
 		}
 	}
