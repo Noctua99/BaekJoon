@@ -16,7 +16,8 @@ public class Gold5_2075 {
 		StringTokenizer st;
 
 		int testcase = Integer.parseInt(br.readLine());
-		int[] intArray = new int[testcase * testcase];
+		int squaredTestcase=testcase*testcase;
+		int[] intArray = new int[squaredTestcase];
 
 		for (int i = 0; i < testcase; i++) {
 			st = new StringTokenizer(br.readLine());
@@ -27,7 +28,7 @@ public class Gold5_2075 {
 
 		Arrays.sort(intArray);
 
-		bw.write(String.valueOf(intArray[testcase * testcase - testcase]));
+		bw.write(String.valueOf(intArray[squaredTestcase - testcase]));
 
 		bw.flush();
 		bw.close();
