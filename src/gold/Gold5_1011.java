@@ -21,8 +21,8 @@ public class Gold5_1011 {
 
 		for (int i = 0; i < testcase; i++) {
 			st = new StringTokenizer(br.readLine());
-			int num = -Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken());
-			intArray[i] = gold.calc(num);
+			int distance = -Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken());
+			intArray[i] = gold.calc(distance);
 		}
 
 		for (int i : intArray) {
@@ -34,14 +34,14 @@ public class Gold5_1011 {
 		bw.close();
 	}
 
-	public int calc(int num) {
-		if (num == 1) {
+	public int calc(int distance) {
+		if (distance == 1) {
 			return 1;
-		} else if (num == 2) {
+		} else if (distance == 2) {
 			return 2;
 		} else {
-			int N = (int) Math.ceil(Math.sqrt(num));
-			if (num <= (Math.pow(N, 2) - N)) {
+			int N = (int) Math.ceil(Math.sqrt(distance));
+			if (distance <= (Math.pow(N, 2) - N)) {
 				return 2 * N - 2;
 			} else {
 				return 2 * N - 1;
