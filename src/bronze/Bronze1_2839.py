@@ -8,7 +8,7 @@ while N >= 0 :
         bag += (N // 5)
         sys.stdout.write(str(bag))
         break
-    N -= 3  
+    N = N - 3
     bag += 1 
 else :
     sys.stdout.write("-1")
