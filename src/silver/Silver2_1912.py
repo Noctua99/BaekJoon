@@ -9,6 +9,5 @@ maximum = lst[0]
 for i in range(1, N):
     dp[i] = max(dp[i-1]+lst[i], lst[i])
     maximum = max(dp[i], maximum)
-    print(f'dp[{i} : {dp[i]} maximum : {maximum}]')
 
 sys.stdout.write(str(maximum))
