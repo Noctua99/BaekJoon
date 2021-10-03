@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int Testcase;
+    scanf("%d", &Testcase);
+
+    for (int i = 1; i < Testcase + 1; i++)
+    {
+        int a, b;
+        scanf("%d %d", &a, &b);
+
+        printf("Case #%d: %d\n", i, a + b);
+    }
+
+    return 0;
+}
