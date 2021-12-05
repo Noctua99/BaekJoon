@@ -10,7 +10,6 @@ import java.util.Collections;
 public class Silver2_9753 {
     static boolean[] primeChecker;
     static ArrayList<Integer> mulPrimes;
-    static final int MAX = 100000;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
