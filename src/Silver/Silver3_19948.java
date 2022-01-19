@@ -27,7 +27,7 @@ public class Silver3_19948 {
             return false;
         }
 
-        // 영자판의 수명이 다했는지
+        // 내용을 모두 입력할 수 있는지
         int[] alphabets = new int[26];
         StringTokenizer stA = new StringTokenizer(remainAlp);
         for (int i = 0; i < 26; i++) {
@@ -39,11 +39,24 @@ public class Silver3_19948 {
             words = words.toLowerCase();
             for (int i = 0; i < words.length(); i++) {
                 int index = words.charAt(i) - 'a';
+                if (i >= 1 && words.charAt(i) == words.charAt(i - 1)) continue;
                 if (alphabets[index] == 0) {
                     return false;
                 } else {
                     alphabets[index]--;
                 }
+            }
+        }
+
+        // 제목을 모두 입력할 수 있는지
+        String title = getTitle(poetry).toLowerCase();
+        for (int i = 0; i < title.length(); i++) {
+            int index = title.charAt(i) - 'a';
+            if (i >= 1 && title.charAt(i) == title.charAt(i - 1)) continue;
+            if (alphabets[index] == 0) {
+                return false;
+            } else {
+                alphabets[index]--;
             }
         }
 
