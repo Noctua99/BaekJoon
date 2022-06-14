@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Silver2_6236 {
+public class Silver3_9657 {
 
     public static boolean isSKWin(int N) {
         if (N <= 4) {
